@@ -1,0 +1,77 @@
+:root {
+    --Lightred: hsla(0, 100%, 67%, 10%);
+    --Orangeyyellow: hsla(39, 100%, 56%, 10%);
+    --Greenteal: hsla(166, 100%, 37%, 10%);
+    --Cobaltblue: hsla(234, 85%, 45%, 10%);
+    /* Gradients */
+    --Lightslatebluebg: hsl(252, 100%, 67%);
+    --Lightroyalbluebg: hsl(241, 81%, 54%);
+    --VioletblueCircle: hsla(256, 72%, 46%, 1);
+    --PersianblueCircle: hsla(241, 72%, 46%, 0);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --DarkGrayblue: hsl(224, 30%, 27%);
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+}
+
+@media (min-width: 700px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+}
+
+
+.blue_section {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.p_Color {
+    color: var(--Lightlavender)
+}
+
+.circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+}
+
+@media (min-width: 700px) {
+    .circle {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+.red_Color {
+    background-color: var(--Lightred);
+}
+
+.ye_Color {
+    background-color: var(--Orangeyyellow);
+}
+
+.cyan_Color {
+    background-color: var(--Greenteal);
+}
+
+.blue_Color {
+    background-color: var(--Cobaltblue);
+}
+
+.btn {
+    background: var(--DarkGrayblue);
+}
+
+.btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
